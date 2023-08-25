@@ -23,21 +23,20 @@
 	});
 
 	// Content script (content.js)
-const paywallContent = document.querySelector('.paywall-content');
+	const paywallContent = document.querySelector('.paywall-content');
 
-// Get the dynamic class name
-const dynamicClassName = paywallContent.className.match(/jsx-\d+/)[0];
+	// Get the dynamic class name
+	const dynamicClassName = paywallContent.className.match(/jsx-\d+/)[0];
 
-// Construct the CSS selector for ::after pseudo-element
-const afterSelector = `.paywall-content.${dynamicClassName}::after`;
+	// Construct the CSS selector for ::after pseudo-element
+	const afterSelector = `.paywall-content.${dynamicClassName}::after`;
 
-// Inject a style to remove the background from ::after
-const style = document.createElement('style');
-style.textContent = `
-  ${afterSelector} {
-    background: none !important;
-  }
-`;
-document.head.appendChild(style);
-
+	// Inject a style to remove the background from ::after
+	const style = document.createElement('style');
+	style.textContent = `
+  		${afterSelector} {
+    		background: none !important;
+  		}
+	`;
+	document.head.appendChild(style);
 }
