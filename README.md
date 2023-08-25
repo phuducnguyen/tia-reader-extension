@@ -42,4 +42,4 @@ This project is licensed under the [MIT License](LICENSE).
 
 **Disclaimer**: This extension is not affiliated with TechInAsia or any other website mentioned. It's created for educational and experimental purposes.
 
-*Created by Your Name - [GitHub Profile](https://github.com/phuducnguyen)*
+* TechWithMew - [GitHub Profile](https://github.com/phuducnguyen)*
